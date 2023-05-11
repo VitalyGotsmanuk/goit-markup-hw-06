@@ -412,6 +412,27 @@
             </li>
         </ul>
         </div>
+
+        <div class="footer-subscribe">
+            <p class="text-medium-ftr footer-txt">Subscribe</p>
+            <form name="subscribe" autocomplete="off" novalidate >
+                <label>
+                    
+                    <input type="email" name="email" class="subscrb-email" placeholder="E-mail"/>
+                </label>
+
+                <button type="submit" class="subscrb-button">Subscribe
+                    
+                    <svg class="subscrb-icon" width="24" height="26">
+                        <use href="./images/icons.svg#send"></use>
+                      </svg>
+                
+                 </button>   
+        
+            </form>
+         
+        
+        </div>
     </div>     
     </footer>
     <!------------>
@@ -424,9 +445,40 @@
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
+    
+        <div class="contac-form">
+            <p class="text-medium-ftr contac-form-head">Leave your contacts and we will call you back</p>
+            <form name="contac-form-list" autocomplete="off" novalidate >
+                <label class="contac-label">
+                    Name
+                    <input type="text" name="username" class="user-name" placeholder="" autofocus/>
+                </label>
+                <label class="contac-label">
+                    Phone number
+                    <input type="tel" name="phone" class="user-phone" placeholder=""/>
+                  </label>
+                
+                <label class="contac-label">
+                    E-mail
+                    <input type="email" name="email" class="user-email" placeholder=""/>
+                </label>
+
+                <label class="contac-label">
+                    Comment
+                    <textarea name="feedback" rows="6"  placeholder="Text input"></textarea>
+
+                </label>
+                
+                <input type="checkbox" name="language" value="python" id="python">
+                <label class="form-label" for="python">I accept the terms and conditions of the Privacy Policy</label>
+
+                <button type="submit" class="send-button">Send</button>   
+        
+            </form>       
+        </div>
+
       </div>
     </div>
-
 
     <!-- Ставимо перед закриваючим тегом body -->
     <script src="./js/modal.js"></script> <!-- Скрипт для модального вікна - посилання -->

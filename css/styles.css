@@ -464,8 +464,51 @@ color: #404BBF;
 .footer-rt{
 	display: inline-block;
 	align-items: start;
-	/*margin-left: 120px;*/
+	margin-right: 120px;
 }
+
+.subscrb-button{
+	/*display: ;
+	margin-left: ;*/
+
+	min-width: 165px;
+	min-height: 40px;
+	border-style: none;
+	/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
+	border-radius: 4px;
+
+	padding-left: 24px;
+
+	background-color: var(--color-iris);
+	color: var(--color-white);
+
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+    text-align: left;
+
+	/* Для перехода делаем в основном стиле условия */
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.subscrb-button:hover,
+.subscrb-button:focus{
+	background-color: var(--color-ocean);
+}
+.subscrb-icon{
+	position: absolute;
+	margin-left: 16px;
+
+	fill: var(--color-white);
+}
+
+
 /*=========================*/
 
 
@@ -717,5 +760,55 @@ color: #404BBF;
 .modal-close-icon:focus {
 	fill: #ffffff;
 }
+
+.contac-form{
+	
+	padding: 72px 24px;
+}
+
+.contac-form-head{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.send-button{
+	/*display: ;
+	margin-left: ;*/
+
+	min-width: 169px;
+	min-height: 56px;
+	border-style: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+
+	background-color: var(--color-iris);
+	color: var(--color-white);
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+    text-align: center;
+
+	/* Для перехода делаем в основном стиле условия */
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.send-button:hover,
+.send-button:focus{
+	background-color: var(--color-ocean);
+}
+
+
+
+
 /* == ===================== == */
 
