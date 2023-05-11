@@ -51,6 +51,7 @@ a {
 	overflow: hidden;
   }
 
+/* = Змінні для різних стилів = */  
 :root{
 	--color-iris: #4d5ae5;
 	--color-ocean: #404bbf;
@@ -73,6 +74,7 @@ a {
 
 	--anime: 250ms cubic-bezier(0.4, 0, 0.2, 1); /*змінна для transition*/
 }
+/* = =========================== = */  
 
 /*Base style*/
 body{
@@ -102,7 +104,6 @@ section{
 	/*margin-right: auto;*/
 }
 /* ====== Text Style ====== */
-
 .hero-header{
 	display: block;
 	margin: 0px auto;
@@ -203,7 +204,6 @@ color: #404BBF;
 	align-items: center;
 	margin-right: auto;
 }
-
 .nav-link{
 	position: relative;
 
@@ -224,7 +224,6 @@ color: #404BBF;
 	height: 4px;
 	border-radius: 2px;	
 }
-
 .nav-link.active::after{
 	background-color: #404BBF;
 	}
@@ -255,7 +254,7 @@ color: #404BBF;
     color: currentColor;
 }
 
-/* Section 1*/
+/* ===== Section 1 ===== */
 .hero{
     background-color: var(--color-navy-blue);
 	
@@ -302,7 +301,6 @@ color: #404BBF;
 .button:hover,
 .button:focus{
 	background-color: var(--color-ocean);
-
 }
 
 /* [type] {} */
@@ -354,9 +352,7 @@ color: #404BBF;
 	border-radius: 4px; 
 	background-color: var(--color-cloud);
 }
-
 /*.feature-item{
-	
 }*/
 
 /* ===== Section 3 =====*/
@@ -368,10 +364,11 @@ color: #404BBF;
 	gap: 24px;
 	justify-content: space-between;
 }
-/*
+/* 
 .wedo-itm {
 	width: calc((100% - 48px) / 3);
 	/*(від загальної ширини екрану віднімаємо суму відступів між пунктами і ділимо це на кількість пунктів списку) (можна використовувати width: calc((100% - 3 * 16px) / 3) або flex-basis: calc((100% - 48px) / 3) або flex-basis: calc((100% - 3 * 16px) / 3))*/
+
 
 /* ====  4 For Team ====*/
 .team{
@@ -389,7 +386,6 @@ color: #404BBF;
 }
 .team-card{
 	padding: 32px 0px;
-
 }
 .team-txt{
 	text-align: center; 
@@ -401,80 +397,9 @@ color: #404BBF;
 	justify-content: space-between;
 	gap: 24px;
 }
+/* ====  ======== ====*/
 
-/*=== Footer styles  ======*/
-.footer{
-    background-color: var(--color-navy-blue);
-	padding: 100px 0;
-}
-.footer-container{
-	display: flex;
-	align-items: baseline;
-}
-
-.logo-ft, .text-medium-ftr{
-	display: inline-block;
-	margin-bottom: 16px;
-}
-
-.footer-txt{
-    color: #ffffff;
-	max-width: 264px;
-}
-.footer-lft {
-	margin-right: 120px;
-}
-.footer-rt{
-	display: inline-block;
-	align-items: start;
-	/*margin-left: 120px;*/
-}
-/*=========================*/
-
-/* ==== Иконки социальных сетей ==== */
-.socials {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
-}
-
-.socials-ftr {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 16px;
-}
-
-.socials-link,
-.socials-link-ftr {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 40px;
-	height: 40px;
-	border-radius: 50%; /* Делает круг из квадрата*/
-	background-color: var(--color-iris);
-
-	transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.social-icon {
-	fill: var(--color-cloud);
-}
-.socials-link:hover,
-.socials-link:focus {
-	background-color: #404bbf;
-}
-
-.socials-link-ftr:hover,
-.socials-link-ftr:focus {
-	background-color: #31d0aa;}
-
-/* ========================== */
+/* =======  5 Customers ====*/
 
 /* ==== Иконки Customers ==== */
 .customer {
@@ -486,7 +411,6 @@ color: #404BBF;
 .customer-head {
 	line-height: 1.1;	
 }
-
 
 /*.customer-item {
 }*/
@@ -512,19 +436,89 @@ color: #404BBF;
 .customer-link:focus  {
 	color: #404bbf;
 	border-color: #404bbf; }
-
 .customer-icon {
 	fill: currentColor;
 }	
-
 /*=========================*/
 
-/*=== For POrtfolio page ===*/
+/*=== Footer styles  ======*/
+.footer{
+    background-color: var(--color-navy-blue);
+	padding: 100px 0;
+}
+.footer-container{
+	display: flex;
+	align-items: baseline;
+}
+.logo-ft, .text-medium-ftr{
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.footer-txt{
+    color: #ffffff;
+	max-width: 264px;
+}
+.footer-lft {
+	margin-right: 120px;
+}
+.footer-rt{
+	display: inline-block;
+	align-items: start;
+	/*margin-left: 120px;*/
+}
+/*=========================*/
 
+
+/* ==== Иконки социальных сетей ==== */
+.socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+.socials-ftr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+.socials-link,
+.socials-link-ftr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 40px;
+	height: 40px;
+	border-radius: 50%; /* Делает круг из квадрата*/
+	background-color: var(--color-iris);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.social-icon {
+	fill: var(--color-cloud);
+}
+.socials-link:hover,
+.socials-link:focus {
+	background-color: #404bbf;
+}
+.socials-link-ftr:hover,
+.socials-link-ftr:focus {
+	background-color: #31d0aa;}
+/* ========================== */
+
+
+
+/*==== Portfolio page styles ====*/
 .portfolio{
 	padding-top: 0;
+	padding: 96px 0 120px;
 }
-/*Filter portfolio style*/
+
+/*==== Filter portfolio style ==== */
 .filter-list{
 	display: flex;
 	justify-content: center;
@@ -566,13 +560,9 @@ color: #404BBF;
 }
 /*===========================*/
 
-.portfolio{
-	padding: 96px 0 120px;
-}
-
-/*Filter portfolio list - auto ajust*/
+/* ==== Main portfolio list - auto ajust ===== */
 .portfolio-list /*Ставит карточки по ширине с не более с отступом между ними*/
-	{
+{
 	display: flex;
 	flex-wrap: wrap;
   	/*gap:var(--indent);*/
@@ -580,9 +570,7 @@ color: #404BBF;
 	row-gap: 48px;
 	/*gap: 24px;*/
 	padding: 0;
-
-	}
-
+}
 
 .portfolio-link{
 	display: block;
@@ -591,37 +579,33 @@ color: #404BBF;
 	transition-property: box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
-.portfolio-card{
-	border: 1px solid #e7e9fc;
-	border-top: none;
 
-	/*padding-top: 32px ;
-	padding-bottom: 32px;
-	padding-left: 16px;*/
-
-	padding: 32px 16px;
-}
 .portfolio-link:hover, 
 .portfolio-link:focus{
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-itm
-{
+.portfolio-card{
+	border: 1px solid #e7e9fc;
+	border-top: none;
+	/*padding-top: 32px ;
+	padding-bottom: 32px;
+	padding-left: 16px;*/
+	padding: 32px 16px;
+}
+
+.portfolio-list-itm{
 	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-/*Portfolio overley*/
-
+/* ==== Portfolio overley ===== текс поверх картинки*/
 .portfolio-thumb{
 	position: relative;
-	overflow: hidden; /*приячет карточку с текстом*/
-
+	overflow: hidden; /* приячет карточку с текстом*/
 }
-
 .overlay-text{
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -643,22 +627,17 @@ color: #404BBF;
 	transition-property: transform;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
-
 .portfolio-link:focus .overlay-text{
 	transform: translateY(0%);
 }
-
 .portfolio-item:hover .overlay-text{
 	transform: translateY(0%);
 }
-
 /*=====================*/
 
-
-/* Modal window*/
-.backdrop {
+/* ======= Modal window (index.html) ====== */
+.backdrop /*Размытый фон*/ {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -681,9 +660,9 @@ color: #404BBF;
 	pointer-events: none; /* не можемо на нього клікати, він не заважає єлементам нижче*/
 }
 
-.modal {
+/* == Біла плашка == */
+.modal{
 	position: absolute;
-
 	/*для центрування строго по центру вінка (видимої області)*/
 	top: 50%;
 	left: 50%;
@@ -701,7 +680,8 @@ color: #404BBF;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  	
 }
-.modal-close-btn {
+/* == Кнопка закриття вікна == */
+.modal-close-btn  {
 	position: absolute;
 	top: 24px;
 	right: 24px;
@@ -722,20 +702,20 @@ color: #404BBF;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  	
-	}
+}
 .modal-close-btn:focus,
 .modal-close-btn:hover {
 	background-color: #404bbf;
 	border: none;
 	fill: #ffffff;
 } 
-
 .modal-close-icon {
 	fill: inherit;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close-icon:hover,
 .modal-close-icon:focus {
 	fill: #ffffff;
 }
+/* == ===================== == */
+
