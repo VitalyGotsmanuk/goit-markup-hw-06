@@ -893,7 +893,6 @@ color: #404BBF;
 
 .form-comment::placeholder{
 	font-size: 12px;
-	line-height: 1.167;
 	letter-spacing: 0.04em;
 
 	color: rgba(46, 47, 66, 0.4);
@@ -909,9 +908,12 @@ color: #404BBF;
 	margin-bottom: 24px;
 
 }
+
+
 .form-check-input {
 	appearance: none; /*Скидає налаштування від браузера по дефлоту*/
 	display: block; /*для правильної роботи геометрії*/
+	
 	width: 16px;
 	height: 16px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
@@ -925,9 +927,33 @@ color: #404BBF;
 
 }
 
+/* svg checkbox */
+.unchecked {
+	opacity: 1;
+
+	transition-property: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.checked {
+	opacity: 0;
+
+	transition-property: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.form-check-input:checked + .form-custom-check > .unchecked {
+	opacity: 0;
+}
+.form-check-input:checked + .form-custom-check > .checked {
+	opacity: 1;
+}
+/*при спрацюванні Інпут- для форми кастом чек вибирається стан Чек. Анчек - за замовчуванням*/
+/* svg checkbox */
 
 .form-agreement-text {
-	
 	font-size: 12px;
 	letter-spacing: 0.04em;
 
