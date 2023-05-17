@@ -464,15 +464,36 @@ color: #404BBF;
 .footer-rt{
 	display: inline-block;
 	align-items: start;
-	margin-right: 120px;
+	margin-right: 80px;
 }
 
-.subscrb-button{
-	/*display: ;
-	margin-left: ;*/
 
-	min-width: 165px;
+.subscrb-email{
+
+	border-style: none;
+	width: 264px;
 	min-height: 40px;
+	border-radius: 4px;
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	margin-right: 24px;
+	padding-left: 16px;
+
+	font-size: 12px;
+
+	color: #FFFFFF;
+
+
+}
+
+
+.subscrb-button{
+	
+	width: 164px;
+	height: 40px;
 	border-style: none;
 	/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
 	border-radius: 4px;
@@ -507,7 +528,6 @@ color: #404BBF;
 
 	fill: var(--color-white);
 }
-
 
 /*=========================*/
 
@@ -722,6 +742,7 @@ color: #404BBF;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  	
+	padding: 72px 24px;
 }
 /* == Кнопка закриття вікна == */
 .modal-close-btn  {
@@ -761,51 +782,58 @@ color: #404BBF;
 	fill: #ffffff;
 }
 
-.contac-form{
-	
-	padding: 72px 24px;
-}
-
 .contac-form-head{
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-
 }
 
-.send-button{
-	/*display: ;
-	margin-left: ;*/
+.modal-form {
+	display: inline;
+	width: 100%;
+}
+.modal-label {
+	display: block;
+	margin-bottom: 4px;
 
-	min-width: 169px;
-	min-height: 56px;
-	border-style: none;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 1.167;
+
+	color: #8E8F99;
+
+}
+.modal-contact {
+	position: relative; /* На цей div позиціонеється іконка*/
+	margin-bottom: 8px ;
+}
+.form-field {
+	width: 100%;
+	min-height: 40px;
+
+	border: 1px solid rgba(46, 47, 66, 0.4);
 	border-radius: 4px;
 
-	background-color: var(--color-iris);
-	color: var(--color-white);
-
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.04em;
-    text-align: center;
-
-	/* Для перехода делаем в основном стиле условия */
-	transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	padding-left: 38px ;
 
 }
+.form-icon {
+	top: 14px;
+	left: 19px;
+	position: absolute;
 
-.send-button:hover,
-.send-button:focus{
-	background-color: var(--color-ocean);
 }
+.form-coment{
+	width: 100%;
+	
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	border-radius: 4px;
+
+}
+.form-label {
+}
+
 
 
 
