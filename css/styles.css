@@ -467,19 +467,21 @@ color: #404BBF;
 	margin-right: 80px;
 }
 
+.subscribe-form-field{
+	margin-right: 24px;
+
+}
 
 .subscrb-email{
-
 	border-style: none;
 	width: 264px;
+	
 	min-height: 40px;
 	border-radius: 4px;
 	border: 1px solid #FFFFFF;
 	background-color: transparent;
-
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-	margin-right: 24px;
 	padding-left: 16px;
 
 	font-size: 14px;
